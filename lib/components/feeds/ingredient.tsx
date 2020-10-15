@@ -49,7 +49,7 @@ const Ingredient = ({index}:any) => {
     list.push({ing,exist:exist?"O":"X"})
     })
 
-
+//commit
   return (
     <div>
     <Button auto onClick={handler} type={isWarning?"error":"success"} ghost>유해 성분 :{index.length}개</Button>
