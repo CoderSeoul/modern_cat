@@ -45,7 +45,7 @@ const Ingredient = ({index}:any) => {
   const isWarning = index.length<3?false:true;
   let list:Array<Object> =[];
   data.forEach((ing:String,idx:Number)=>{
-    let exist = index.includes(idx+1)?true:false;
+    let exist = index.includes(idx)?true:false;
     list.push({ing,exist:exist?"O":"X"})
     })
 
