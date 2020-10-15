@@ -1,0 +1,26 @@
+import Layout from 'lib/components/layout'
+import { Button, Link, Display, Spacer } from '@geist-ui/react'
+
+export const meta = {
+  title: '',
+  date: '',
+  description: '',
+}
+
+## Interested in me?
+
+Please check [https://hellorusk.net](https://hellorusk.net) !
+
+<Spacer y={1} />
+
+## Interested in this site?
+
+`blog.hellorusk.net` is created by <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted on <a href="https://vercel.com/" target="_blank">Vercel</a>.  
+Source is <a href="https://github.com/HelloRusk/blog.hellorusk.net" target="_blank">here</a>.
+
+<Display shadow caption="This website is blazingly fast.">
+  <img src="https://user-images.githubusercontent.com/36184621/87223814-047fb380-c3bb-11ea-8a9c-77616a27ada7.png" />
+</Display>
+
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

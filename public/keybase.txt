@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/hellorusk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hellorusk.net
+  * I am hellorusk (https://keybase.io/hellorusk) on keybase.
+  * I have a public key ASCde5VAm6Yqqg6qg5I9By3ywbKQJyDHvUh6wxeRfMp4awo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209d7b95409ba62aaa0eaa83923d072df2c1b2902720c7bd487ac317917cca786b0a",
+      "host": "keybase.io",
+      "kid": "01209d7b95409ba62aaa0eaa83923d072df2c1b2902720c7bd487ac317917cca786b0a",
+      "uid": "3a8db9f0feaabfb8903cab3c37c65619",
+      "username": "hellorusk"
+    },
+    "merkle_root": {
+      "ctime": 1548375953,
+      "hash": "8c8ca0326714cfd6a89c3a9f9c4201ca41f992078ec8d8b3798437f910e564b7829091507a80b0830f932e3eedb567da19a9a3b8125752cef404adeb78806731",
+      "hash_meta": "fbb60987a0967fcc5a6bc48daf1fa91a17dfe6733de801ae9d26b7f4cabc2de9",
+      "seqno": 4609105
+    },
+    "service": {
+      "entropy": "YLn3WJlFUTYcaRXXO7ZuC/Pj",
+      "hostname": "hellorusk.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.13.2"
+  },
+  "ctime": 1548375962,
+  "expire_in": 504576000,
+  "prev": "5562f292cb30fa6cbfb16e23dc61cf736e65402ffeafb7768353da787b698422",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnXuVQJumKqoOqoOSPQct8sGykCcgx71IesMXkXzKeGsKp3BheWxvYWTESpcCBsQgVWLykssw+my/sW4j3GHPc25lQC/+r7d2g1PaeHtphCLEIJ88mefkxUodjzln0uNv2a5ryJ0yLGs3uRMt7aTuaQ1TAgHCo3NpZ8RAWFlJiveipzZA8JuzpoV02U3P6UimQDgwFpZ5qURYC37nIFlJ3wJCG3G44KL4TJzRQIhmXrNq34+JV1j42ttUC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHb73SDtsJJQ1Hx8fywjX0ApLbZqOcINHACE+9LG4o3io3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hellorusk
+
+==================================================================
