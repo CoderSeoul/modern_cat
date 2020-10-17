@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import {
   Spacer,
   useTheme,
+  Divider,
   Image,
   useToasts,
   Button,
@@ -42,14 +43,6 @@ const Layout = ({ children, meta }: any) => {
   }, [asPath]);
   const showViews = useMemo(() => BLOG.enableViews, []);
 
-  const normalizedTitle = encodeCharacterForLink(meta?.title);
-  const tweetlink = `https://twitter.com/intent/tweet?text=${normalizedTitle}%20-%20HelloRusk%20Official%20Website%0a&url=https://${BLOG.domain}${asPath}`;
-  const hatenalink = `https://b.hatena.ne.jp/add?mode=confirm&url=https://${BLOG.domain}${asPath}&title=${normalizedTitle}"`;
-
-  const [toasts, setToast] = useToasts();
-  const click = () =>
-    setToast({ text: "Thank you for sharing!", delay: 10000 });
-
   return (
     <section>
       <Head>
@@ -75,63 +68,42 @@ const Layout = ({ children, meta }: any) => {
         )}
       </Head>
       <div className="container">
-        {inDetailPage && <Spacer y={10} />}
-        {!inDetailPage && <Profile />}
-        {inDetailPage && <Spacer y={1} />}
-        {inDetailPage && 
-          <div className="thumnail">
-          <svg width="100%" height="100%">
-            <defs>
-              <mask id="mask" x="0" y="0" width="100%" height="100%" >
-                <rect fill='#aaa' id="alpha" x="0" y="0" width="100%" height="100%"/>
-                
-                <svg id="test2" viewBox="0 -160 100 500" >
-                  <polygon transform="scale(.5)" points="361.9,455.7 361.9,126.6 290.6,85.4 219.4,126.6 148.1,85.4 76.8,126.5 76.8,44.3 5.6,3.2
-                      5.6,332.3 76.8,373.4 76.8,126.6 148.1,167.7 148.1,167.7 148.1,414.6 219.4,373.4 219.4,126.6 219.3,126.6 219.4,126.6
-                      290.6,167.7 290.6,167.7 290.6,496.8"/>
-                </svg>
-               
-              </mask>
-            </defs>
-            
-            <rect fill='#f6f6f6' mask='url(#mask)' id="base" x="0" y="0" width="100%" height="100%"/>
-          </svg>
-        </div>
-        }
+        <Profile />
+        {inDetailPage && <Spacer y={7} />}
         {inDetailPage && 
           <div className="title">
-            <img src={"https://modern-cat-paper.s3.ap-northeast-2.amazonaws.com/h1.png"} alt="dot grid"/>
+            <img src={'https://yumai.s3.ap-northeast-2.amazonaws.com/dotGrid.png'} alt="dot grid"/>
             <h1>{meta?.title}</h1>
           </div>
         }
+        {inDetailPage && <Spacer y={2} />}        
         {inDetailPage && (
-          <div className="date-box">
-            <p className="date">
-              {date}
-            </p>
-            {showViews && <Image width={100} height={24} src={url} />}
+          <div className="description">
+            <div className="description__left">
+              <h3>{meta?.description}</h3>
+            </div>
+            <div className="description__right">
+              <h4>Related Posts</h4>
+              {
+                meta?.related.map((post:any)=>{
+                  return(
+                    <div key={post.title}>
+                    <Link href={post.link} icon>{post.title}</Link>
+                    <Divider />
+                    </div>
+                  )
+                })
+              }
+            </div>
           </div>
         )}
+        {inDetailPage && <Spacer y={2} />}           
+        {inDetailPage && (<Divider align="start"><p>{date}</p></Divider>)}
         {inDetailPage && <Spacer y={1} />}
         {children}
-        {inDetailPage && (
-          <div className="share-sns">
-            <Spacer y={0.5} />
-            <Button type="secondary" onClick={click} ghost>
-              <Link href={hatenalink} target="_blank">
-                Share on Hatena
-              </Link>
-            </Button>
-            <Spacer y={0.5} />
-            <Button type="success" onClick={click} ghost>
-              <Link href={tweetlink} target="_blank">
-                Share on Twitter
-              </Link>
-            </Button>
-          </div>
-        )}
+        
         <Spacer y={5} />
-        <ContactsWithNoSSR />
+        {/* <ContactsWithNoSSR /> */}
       </div>
 
       <style jsx>{`
@@ -145,23 +117,11 @@ const Layout = ({ children, meta }: any) => {
 
         .container {
           width: 100%;
-          max-width: 750px;
+          max-width: 60vw;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           text-spacing: none;
-        }
-        .thumnail{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-image: url(https://www.catprotection.com.au/site/wp-content/uploads/2019/03/cat-banner-scaled.jpg);
-          background-size: cover;
-          background-position: center;
-          height:100px;
-          position:absolute;
-          left:0;
-          width:100vw;
         }
 
         .title{
@@ -171,35 +131,51 @@ const Layout = ({ children, meta }: any) => {
 
         .title > img{
             position:absolute;
-            left:-50px;
-            top:-50px;
-            width:100px;
-            height:100px;
+            left:-100px;
+
+            width:150px;
+            height:150px;
             z-index:1;
         }
         .title > h1{
-          font-family: 'GmarketSansBold';
+          font-family: 'S-CoreDream-8Heavy';
+          
           position:relative;
+          font-size: 2.5rem;
           z-index:2;
+        }
+
+        .description{
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .description__left{
+          width:50%;
         }
         .container :global(h1) {
           font-size: 2rem;
         }
 
         .container :global(h2) {
-          font-family: 'GmarketSansBold';
+          font-family: 'S-CoreDream-8Heavy';
           font-size: 1.7rem;
+          
         }
 
         .container :global(h3) {
-          font-family: 'GmarketSansLight';
+          font-family: 'S-CoreDream-8Heavy';
           font-size: 1.4rem;
         }
 
         .container :global(h4) {
+          color:#6ad8a9;
           font-size: 1.2rem;
         }
-
+        .container :global(h6) {
+          color:#6ad8a9;
+          font-size: 3rem;
+        }
         .date-box {
           display: flex;
           width: fit-content;
@@ -242,14 +218,8 @@ const Layout = ({ children, meta }: any) => {
           .container > :global(.date) {
             text-align: center;
           }
-
-          .date-box {
-            justify-content: center;
-            margin: 0 auto;
-          }
-
-          .date-box :global(.image) {
-            display: none;
+          .description__left{
+            margin-right:20px;
           }
         }
 

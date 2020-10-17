@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Avatar,useTheme } from "@geist-ui/react";
+import { Avatar,useTheme,Spacer } from "@geist-ui/react";
 import Link from "next/link";
-import ProfileLinks from "./profile-links";
-import BLOG from "../../blog.config";
 
-const avatarCard = () => {
-  return <Avatar isSquare size={45} alt="avatar" src="/assets/avatar.png" />;
-};
 
 // eslint-disable-next-line no-empty-pattern
 const Profile = React.memo(({}) => {
@@ -24,15 +19,17 @@ const Profile = React.memo(({}) => {
       <div className="row">
         <Link href="/">
           <a>
-            <img width="200px" height="200px" src={"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYR8oYCmZflvZVA60HyDGl5TqxkMPo0ZPsLA&usqp=CAU"}/>
+            <h2>Beta version</h2>
           </a>
         </Link>
       </div>
       <style jsx>{`
         .row{
           display: flex;
-          align-items: center;
-          justify-content: center;
+        }
+        a{
+          font-family: 'S-CoreDream-8Heavy';
+          color:#111;
         }
 
         .profile {
@@ -43,12 +40,10 @@ const Profile = React.memo(({}) => {
           font-size: 1.6rem;
           margin: 0;
           text-transform: uppercase;
-          color: ${theme.palette.accents_5};
           line-height: 1;
         }
 
         .profile :global(.intro) {
-          color: ${theme.palette.accents_5};
           font-size: 0.875rem;
           margin-top: 5px;
         }

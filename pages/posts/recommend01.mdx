@@ -6,8 +6,12 @@ import Ingredient from 'lib/components/feeds/Ingredient'
 export const meta = {
   title: '수의사가 알려주는 중성화수술 이후 고양이사료 ',
   date: '2020-06-18T12:27:05.070Z',
-  description: '',
+  description: '중성화 수술이후 체중관리 등 케어를 위한 방법 및 사료추천',
   image: '',
+  related:[
+    {title:'고령의 고양이에게 알맞는 사료',link:'/posts/recommend03'},
+    {title:'새끼 고양이에게 알맞는 사료',link:'/posts/recommend02'},
+    ]  
 }
 
 
@@ -47,7 +51,7 @@ export const meta = {
 장내 환경을 좋게만들어 음식을 제대로 소화 할 수 있게 하면, 수술 후 살찌기 쉬운 고양이의 체중 관리에도 도움이됩니다.
 
 <Spacer y={2}/>
-<Divider>HTTP</Divider>
+<h6>●</h6>
 <h2>중성화수술 후 사료전환 포인트</h2>
 <Spacer y={1}/>
 중성화 후 사료를 전환 여부를 결정하지만, 수술 후 실밥 제거 할 때 체중이 증가하고있는 고양이는 그 후에도 체중 증가가 가속 하는 경향이 있습니다.
@@ -61,7 +65,7 @@ export const meta = {
 </Card>
 
 <Spacer y={2}/>
-<Divider>HTTP</Divider>
+<h6>●</h6>
 <h2>중성화수술 후 사료 제공 방법에 관한 사항</h2>
 <Spacer y={2}/>
 
@@ -85,16 +89,16 @@ export const meta = {
 <h3>4. 생후 1년 미만의 새끼는 무리하게 칼로리를 줄인 사료로 바꿀 필요가없다.</h3>
 <Spacer y={1}/>
 일반적으로 6 ~ 10 개월의 고양이가 중성화수술을 합니다. 생후 1년 까지는 몸을 만드는 중요한 성장기 이므로 무리하게 칼로리를 줄인 사료로 바꿀 필요는 없습니다 . 체중의 변화 등을 보면서 수술 전의 무게의 90 % 정도를 기준으로 조정할 수 있습니다. 그럼에도 불구하고 체중이 증가 할 경우 중성화 고양이용 사료로 전환하면 됩니다.
+
+
 <Spacer y={2}/>
-
-
-<Divider>HTTP</Divider>
+<h6>●</h6>
 <h2>중성화수술 후 추천사료</h2>
 <Spacer y={2}/>
-<h3>1. 퓨리나 원캣 1세이상 건강한 비뇨기계관리</h3>
 <Grid.Container gap={2} justify="center" alignItems="center">
   <Grid xs><img src="https://img.danawa.com/prod_img/500000/346/221/img/4221346_1.jpg?shrink=500:500&_v=20160707144043" alt="pic1" title="文字が大きい" /></Grid>
   <Grid xs>
+    <h3>1. 퓨리나 원캣 1세이상 건강한 비뇨기계관리</h3>
     <Price data={[{ kg: 1.5, price: 14500}]}/>
     <Spacer y={1}/>
     <Ingredient index={[]}/>
@@ -102,10 +106,10 @@ export const meta = {
 </Grid.Container> 
 
 <Spacer y={2}/>
-<h3>2. 모그냥 화이트피쉬 포 캣</h3>
 <Grid.Container gap={2} justify="center" alignItems="center">
-  <Grid xs><img src="https://m.petbtob.co.kr/web/product/big/201908/14b35f2cdae56142bd00e68d0b9514a5.jpg" alt="pic1" title="文字が大きい" /></Grid>
+  <Grid xs><img src="https://th3.tmon.kr/thumbs/image/56b/641/7d9/e5c1717c1_700x700_95_FIT.jpg" alt="pic1" /></Grid>
   <Grid xs>
+    <h3>2. 모그냥 화이트피쉬 포 캣</h3>
     <Price data={[{ kg: 1.5, price: 14500}]}/>
     <Spacer y={1}/>
     <Ingredient index={[]}/>
@@ -113,22 +117,22 @@ export const meta = {
 </Grid.Container> 
 
 <Spacer y={2}/>
-<h3>3. 포르자10 캣 유리너리(비뇨기질환) </h3>
 <Grid.Container gap={2} justify="center" alignItems="center">
-  <Grid xs><img src="https://www.doggynkitty.co.kr/mall/shop_image/202002/%C0%AF%B8%AE%B3%CA%B8%AE%A3%B6%281%29.jpg" alt="pic1" title="文字が大きい" /></Grid>
+  <Grid xs><img src="https://lh3.googleusercontent.com/proxy/JVuUG9CkfIaTWDfMEoFJGAngAyxPcRE3iKkRxltaGgFx5yDl7b7E3idVtL2fBoLp3smb92AVPMBFi5oz4aeKOGUuxjuLwzDpKzJKum1PWhRJMDba9PMTPc2ieSTwd7GrBlba47Z6yBaJe1-X6Wohh9xRRVhPrQ" alt="pic2" /></Grid>
   <Grid xs>
-    <Price data={[{ kg: 1.5, price: 14500}]}/>
+    <h3>3. FORZA10 캣 유리너리(비뇨기질환) </h3>
+    <Price data={[{ kg: 0.45, price: 8900}]}/>
     <Spacer y={1}/>
     <Ingredient index={[]}/>
   </Grid>
 </Grid.Container> 
 
 <Spacer y={2}/>
-<h3>4. 힐스 사이언스다이어트 캣 어덜트 유리너리 헤어볼 </h3>
 <Grid.Container gap={2} justify="center" alignItems="center">
-  <Grid xs><img src="https://img.danawa.com/prod_img/500000/160/658/img/10658160_1.jpg?shrink=500:500&_v=20200228124229" alt="pic1" title="文字が大きい" /></Grid>
+  <Grid xs><img src="https://img.danawa.com/prod_img/500000/160/658/img/10658160_1.jpg?shrink=500:500&_v=20200228124229" alt="pic3"/></Grid>
   <Grid xs>
-    <Price data={[{ kg: 1.5, price: 14500}]}/>
+    <h3>4. 힐스 사이언스다이어트 캣 어덜트 유리너리 헤어볼 </h3>
+    <Price data={[{ kg: 1.58, price: 24000}]}/>
     <Spacer y={1}/>
     <Ingredient index={[]}/>
   </Grid>

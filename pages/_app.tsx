@@ -17,6 +17,7 @@ const Application = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>{BLOG.title}</title>
         {domain && <link rel="dns-prefetch" href={domain} />}
+        <meta name="google-site-verification" content="bK6WpkeY7S6i54bVk7YJVz4m6qEriKMpzbPYoiZ89tw" />
         <meta name="referrer" content="strict-origin" />
         <meta name="description" content={BLOG.description} />
         <meta property="og:site_name" content={BLOG.title} />
@@ -49,25 +50,13 @@ const Application = ({ Component, pageProps }: AppProps) => {
         </CssBaseline>
         <style global jsx>{`
 
-          @font-face {
-            font-family: 'GmarketSansLight';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-          }
-          @font-face {
-            font-family: 'GmarketSansBold';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-          }
-          @font-face {
-            font-family: 'ChosunSm';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.1/ChosunSm.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
+@font-face {
+  font-family: 'S-CoreDream-8Heavy';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+     
           b{
             border-bottom: 1px solid #b0e0e6;
             box-shadow: inset 0 -2px 0 #b0e0e6;
@@ -109,9 +98,9 @@ const Application = ({ Component, pageProps }: AppProps) => {
             color: ${theme.palette.accents_3};
           }
 
+
           body {
             overflow-x: hidden;
-            font-family: 'ChosunSm';
           }
 
           @media only screen and (max-width: 767px) {

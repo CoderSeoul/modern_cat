@@ -6,8 +6,12 @@ import Ingredient from 'lib/components/feeds/Ingredient'
 export const meta = {
   title: '수의사가 알려주는 새끼고양이에게 알맞는 사료 ',
   date: '2020-06-18T12:27:05.070Z',
-  description: '',
+  description: '급속도로 성장하는 새끼고양이를 건강하게 자라게 하기위한 방법 및 사료추천',
   image: '',
+  related:[
+    {title:'고령의 고양이에게 알맞는 사료',link:'/posts/recommend03'},
+    {title:'비뇨기질환 고양이에게 알맞는 사료',link:'/posts/recommend05'},
+    ]
 }
 
 
@@ -29,6 +33,7 @@ export const meta = {
 
 
 <Spacer y={2}/>
+<h6>●</h6>
 <h2>사료는 언제부터 줘야할까?</h2>
 <Spacer y={1}/>
 새끼고양이에 대한 사료 선택하기 전에 우선 모유,이유식,건조사료의 전환시기와 하루 식사 횟수에 대해 알아 봅시다.
@@ -51,9 +56,10 @@ export const meta = {
 고양이가 먹는 음식을 바꿀때는 고양이의 체중과 건강 상태의 변화를 살펴보고, 천천히 시간을 들여 진행하는 것이 중요합니다.
 
 생후 60 일경까지 이유식을 끝내는 것이 이상적이지만, 고양이에 따라 성장 속도가 다르기 때문에 위에 적힌 전환시기는 어디 까지나 평균값이라는 것을 참고하세요.
+
+
 <Spacer y={2}/>
-
-
+<h6>●</h6>
 <h2> 새끼고양이에 대한 사료 선택 5가지 기준</h2>
 <Spacer y={1}/>
 <h3>1. 동물성 재료를 주원료로 하는 고단백 (30 % 이상) 사료 선택</h3>
@@ -112,14 +118,16 @@ export const meta = {
 그러나 산화 방지제의 기준치는 매일 계속 먹어도 건강에 영향이없는 양으로 설정되어 있기 때문에 이러한 성분이 들어 있다고해도 위험한 사료라고 확신할 수는 없습니다. 
 
 하지만 안전을 고려하면 가능한 비타민 E와 로즈마리 추출물 등 천연 산화방지제가 사용되고있는 사료를 선택하는 것이 좋습니다.
-<Spacer y={2}/>
 
+
+<Spacer y={2}/>
+<h6>●</h6>
 <h2>새끼고양이 추천사료</h2>
 <Spacer y={2}/>
-<h3>1. 재규어</h3>
 <Grid.Container gap={2} justify="center" alignItems="center">
   <Grid xs><img src="https://simkongcat.com/web/product/big/201903/cf6509bbc0d284bb085d75dcfa37c850.jpg" alt="재규어"/></Grid>
   <Grid xs>
+    <h3>1. 재규어</h3>
     <Price data={[
       { kg: 1.5, price: 23000},
       { kg: 5.4, price: 74700},
@@ -136,10 +144,10 @@ export const meta = {
 
 
 <Spacer y={2}/>
-<h3>2. 오리젠</h3>
 <Grid.Container gap={2} justify="center" alignItems="center">
   <Grid xs><img src="https://image.auction.co.kr/itemimage/18/49/28/18492810b6.jpg" alt="오리젠"/></Grid>
   <Grid xs>
+    <h3>2. 오리젠</h3>
     <Price data={[
       { kg: 0.34, price: 12890},
       { kg: 1.0, price: 26880},
@@ -157,10 +165,10 @@ export const meta = {
 
 
 <Spacer y={2}/>
-<h3>3. 웰니스 코어</h3>
 <Grid.Container gap={2} justify="center" alignItems="center">
   <Grid xs><img src="https://nyangmeong.com/web/product/big/201905/38f1edc0b370ccb90a4b1f203ca33ca7.png" alt="재규어"/></Grid>
   <Grid xs>
+    <h3>3. 웰니스 코어</h3>
     <Price data={[
       { kg: 2.26, price: 32500},
       { kg: 5.0, price: 57200},

@@ -4,7 +4,7 @@
     "now-build": "npm run collect && next build",
     "post": "node scripts/create.js",
     "collect": "node scripts/collect-meta.js",
-    "export": "next build && next export"
+    "export": "npm run now-build && next export"
   },
   "dependencies": {
     "@geist-ui/react": "2.0.2",

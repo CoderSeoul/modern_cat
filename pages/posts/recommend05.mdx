@@ -1,0 +1,166 @@
+import Layout from 'lib/components/layout'
+import { Link, Display, Card,Grid,Divider,Spacer,Table } from '@geist-ui/react'
+import Price from 'lib/components/feeds/price'
+import Ingredient from 'lib/components/feeds/Ingredient'
+
+export const meta = {
+  title: '수의사가 알려주는 비뇨기질환 고양이에게 알맞는 사료 ',
+  date: '2020-06-18T12:27:05.070Z',
+  description: '요로결석,방광염,혈뇨 등 비뇨기질환(FLUTD)를 예방, 치료하는 방법을 소개합니다.',
+  image: '',
+  related:[
+    {title:'고령의 고양이에게 알맞는 사료추천',link:'/posts/recommend03'},
+    {title:'설사하는 고양이에게 알맞는 사료추천',link:'/posts/recommend04'},
+    ]
+}
+
+
+<Spacer y={2}/>
+<h6>●</h6>
+<h2>하부 비뇨기계 질환(FLUTD)이란</h2>
+<Spacer y={1}/>
+FLUTD란 고양이 비뇨기계 요로 질환(Feline Lower Urinary Tract Disease)의 약자로 아래와 같은 '고양이의 오줌과 관련된 질병'을 가리킵니다.
+<Spacer y={1}/>
+  <Card>
+      <ul>
+        <li>세균성 방광염</li>
+        <li>특발성 방광염</li>
+        <li>방광 종양</li>
+        <li>요로 결석</li>
+        <li>혈뇨</li>
+      </ul>
+  </Card>
+
+
+<Spacer y={2}/>
+<h6>●</h6>
+<h2>고양이의 요로결석과 예방법</h2>
+<Spacer y={1}/>
+FLUTD 중에서도 특히 고양이가 걸리기 쉬운 것이 요로 결석입니다.고양이의 요로결석은 요로(콩팥, 요관, 방광, 요도)에 결석이 생기는 병입니다.
+
+요로 결석에는 여러 종류가 있지만, 특히 많은 고양이가 걸리기 쉬운 것은 '스트루바이트결석'과 '옥살산칼슘' 총 2종류입니다.
+
+고양이가 요로 결석이 걸리기 전 평소 요로 결석을 예방하는 것이 중요합니다. 주요 요로결석 예방법은 다음과 같습니다.
+<Spacer y={2}/>
+<h3>1. 물을 충분히 제공</h3>
+<Spacer y={1}/>
+물은 항상 깨끗한 물을 제공하며, 가능하면 음식과 떨어진 장소에도 개수대를 배치하는 것이 좋습니다. 
+또한 물그릇은 너무 작지 않고 고양이가 마시기 쉬운 평평한 물그릇이 좋습니다.
+고양이에 따라서는 흐르는 물을 선호하는 경우도 있기 때문에 워터파운틴이라는 순환장치를 준비하는 것도 한 방법입니다.
+또한 수분량이 많은 습식 사료를 구매하는 것도 추천합니다.
+
+
+<Spacer y={2}/>
+<h3>2. 스트레스 요인을 제거</h3>
+<Spacer y={1}/>
+고양이에 따라 스트레스는 다르지만 예상되는 원인을 찾아내 고양이가 편안하게 지낼 수 있도록 합니다.
+예를 들어, 운동 부족의 경우 주인이 적극적으로 산책시켜주는 것이 좋습니다.
+
+
+<Spacer y={2}/>
+<h3>3. 요로 결석을 고려한 고양이 사료제공</h3>
+<Spacer y={1}/>
+시판되는 고양이 사료 중에는, 평소 고양이의 요로 결석을 예방하고 싶은 분들을 위해 요로 결석을 고려한 종합 영양식이 있습니다.
+이러한 사료는 치료목적인 사료와 달리 건강한 고양이를 위해 만들어져 있습니다.또한, 저마그네슘, 낮은 인함량, 소변 pH 조정 등 소변을 촉진할 수 있도록 고안되어 있는 것이 특징입니다.
+
+
+<Spacer y={2}/>
+<h6>●</h6>
+<h2> FLUTD 개선을 위한 사료 선택 4가지 기준</h2>
+
+<Spacer y={2}/>
+<h3>1. 칼슘, 인, 마그네슘 양이 적고 밸런스가 좋은 사료</h3>
+<Spacer y={1}/>
+칼슘, 인, 마그네슘의 이상적인 균형은 1.2:1:0.08입니다. 
+
+이러한 미네랄 성분의 과다 섭취와 균형이 깨짐으로서, 소변 pH 밸런스가 무너지고 결석이 생기기 쉽습니다.
+그러나 마그네슘이 너무 적은 사료는 옥살산 칼슘을 일으킬 수 있기 때문에, 적당한 양의 미네랄이 균형있게 포함된 사료를 선택하는 것이 중요합니다.
+
+
+<Spacer y={2}/>
+<h3>2. 소변 pH 개선효과</h3>
+<Spacer y={1}/>
+소변의 pH가 산성 또는 알칼리성으로 기울어짐으로써 결석이 잘 만들어지는 환경이 만들어집니다.
+따라서 사료를 먹으면 소변의 pH가 '중성'또는 '약산성'이 되도록 고안된 사료를 선택하는 것이 좋습니다.
+
+또한 고양이의 나이에 따라 마그네슘과 칼슘이 결정화 되기 쉬운 pH 값이 달라지기 때문에 연령에 맞춰 pH 조정하는 것도 중요합니다.
+
+
+<Spacer y={2}/>
+<h3>3. 고단백사료를 선택</h3>
+<Spacer y={1}/>
+고기나 생선 등 동물성 단백질이 풍부한 사료는 소화가 잘되고, 소변 pH를 약산성이 되도록 촉진합니다.
+
+또한 고단백 사료를 먹으면 소변의 양이 증가하기 때문에 요로 결석 개선에 좋은 것으로 알려져 있습니다.
+
+
+<Spacer y={2}/>
+<h3>4. 크랜베리, 오메가3 지방산, 메티오닌 함유</h3>
+<Spacer y={1}/>
+비타민C가 풍부하게 함유된 크랜베리는 키나산이 풍부하여 고양이 비뇨기관리에 도움을 줍니다.
+
+크랜베리에 풍부하게 포함된 키나산은 체내에서 흡수되면 간에서 변화하고, 
+최종적으로는 마뇨산(Hippuric acid)으로 변화하여 소변을 산성으로 유지하는 기능이 있어 세균의 증식을 억제하는데 좋다고 알려져 있습니다.
+
+또한 항산화 작용이 높은 오메가3 지방산이 풍부하게 함유되어 있는 사료도 하부 비뇨기 질환이 신경 쓰이는 고양이에게 추천합니다.
+소변을 알칼리성에서 산성으로 촉진하는 메티오닌이 함유되어 있는 것도 좋을 것입니다.
+
+또한 소변의 pH를 제어하는 작용을 합니다.소변이 알칼리성으로 치우치면 결석의 원인이 되는 스톨바이트라는 결정이 생기기 쉬워지는데 
+메티오닌에 의해 소변이 산성화되므로 FUS(고양이 비뇨기증후군) 예방 효과를 기대할 수 있습니다.
+
+
+
+<Spacer y={2}/>
+<h6>●</h6>
+<h2>FLUTD 개선을 위한 사료추천</h2>
+<Spacer y={1}/>
+
+<Grid.Container gap={2} justify="center" alignItems="center">
+  <Grid xs><img src="https://cdn.imweb.me/thumbnail/20190920/810cb5c51563e.jpg" alt="나우"/></Grid>
+  <Grid xs>
+    <h3>1. 몬지 벳솔루션 유리너리 스트루바이트 </h3>
+    <Price data={[
+      { kg: 1.5, price: 32000},
+      ]}/>
+    <Spacer y={1}/>
+      <Card shadow>
+      <p>낮은 마그네슘 함량과 결정화 방지를 위한 소변의 산성화를 유도하는 성분으로 이루어져있습니다. 조금의 신맛과 염분을 느낄 수 있는 사료입니다. 치료용 기능성 사료이기 때문에 반드시 수의사의 지도하에 제공하시기 바랍니다.</p>
+      </Card>
+    <Spacer y={1}/>    
+    <Ingredient index={[]}/>
+    <Spacer y={1}/>
+  </Grid>
+</Grid.Container> 
+
+
+<Spacer y={2}/>
+<Grid.Container gap={2} justify="center" alignItems="center">
+  <Grid xs><img src="https://www.hillspet.com/content/dam/pim/hills/en_us/pd/dry/pd-cd-multicare-feline-stress-dry-productShot_zoom.jpg" alt="pic1" title="文字が大きい" /></Grid>
+  <Grid xs>
+    <h3>2. Hill's Multicare Feline Stress Urinary Care</h3>
+    <Price data={[{ kg: 1.5, price: 30000}]}/>
+    <Spacer y={1}/>
+     <Card shadow>
+      <p>특발성 방광염 발병시 89 %의 치료에 도움 이 된다고 과학적으로 입증 된 사료입니다. 소변 pH 와 미네랄의 균형을 조정합니다. 마그네슘, 칼슘, 인 함량이 이상적이고, 필수적인 오메가 3 지방산을 함유 하고 있습니다. 반드시 수의사 지도 하에 제공하시길 바랍니다.</p>
+      </Card>
+    <Spacer y={1}/>
+    <Ingredient index={[]}/>
+  </Grid>
+</Grid.Container> 
+
+<Spacer y={2}/>
+<Grid.Container gap={2} justify="center" alignItems="center">
+  <Grid xs><img src="https://img.danawa.com/prod_img/500000/539/710/img/6710539_1.jpg?shrink=500:500&_v=20200903133449" alt="pic1" title="文字が大きい" /></Grid>
+  <Grid xs>
+    <h3>3. 로얄캐닌 고양이 유리너리 S/O 처방 사료</h3>
+    <Price data={[{ kg: 1.5, price: 21200},{ kg: 3.5, price: 52000}]}/>
+    <Spacer y={1}/>
+     <Card shadow>
+      <p>균형잡힌 미네랄 힘량과 스트루바이트 결석, 옥살산 칼슘을 치료하는 기능성사료 입니다. 식욕 돋우는 향 덕분에 향에 민감한 고양이의 기호도가 높으며. 소변 pH를 알칼리성에서 산성으로 촉진하는 메티오닌이 함유되어 있습니다. 반드시 수의사 지도 하에 제공하시길 바랍니다.</p>
+      </Card>
+    <Spacer y={1}/>
+    <Ingredient index={[]}/>
+  </Grid>
+</Grid.Container> 
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

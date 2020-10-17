@@ -85,7 +85,7 @@ const sortPosts = (data) => {
   }
 
   sitemap({
-    baseUrl: "https://blog.hellorusk.net",
+    baseUrl: "https://modern-cat-info.com/",
     pagesDirectory: path.join(__dirname, "../pages"),
     ignoredPaths: ["index"],
     targetDirectory: "public/",
